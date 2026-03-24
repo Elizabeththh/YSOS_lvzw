@@ -50,12 +50,12 @@
       fieldvalue(name),
       fieldname(text("学") + h(2em) + text("号：") + h(1em)),
       fieldvalue(stdid),
-      fieldname(text("教学班号：") + h(1em)),
-      fieldvalue(classid),
-      fieldname(text("专") + h(2em) + text("业：") + h(1em)),
-      fieldvalue(major),
       fieldname(text("院") + h(2em) + text("系：") + h(1em)),
       fieldvalue(school),
+      fieldname(text("专") + h(2em) + text("业：") + h(1em)),
+      fieldvalue(major),
+      fieldname(text("教学班号：") + h(1em)),
+      fieldvalue(classid),
     )
 
     #v(40pt)

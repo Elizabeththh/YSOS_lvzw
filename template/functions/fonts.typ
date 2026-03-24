@@ -2,26 +2,25 @@
 
 #let fonts = (
   serif: (
-    "Source Han Serif SC",
-    "Source Han Serif",
-    "宋体",
-    "Times New Roman",
-    "Georgia",
-    "Garamond",
-    "Palatino",
-    "Baskerville",
+    "New Computer Modern",
+    "SimSun",
   ),
   sans: (
-    "Source Han Sans SC",
-    "Source Han Sans",
-    "黑体",
+    "New Computer Modern",
     "SimHei",
-    "Microsoft YaHei",
-    "PingFang SC",
   ),
-  monospace: ("JetBrains Mono", "Courier New", "Courier", "Consolas", "Monaco"),
+  monospace: (
+    "MesloLGS NF",
+    "SimSun",
+  ),
+  italic: (
+    "New Computer Modern",
+    "KaiTi",
+  )
 )
 
-#let textbf(it) = block(text(font: fonts.sans, weight: "semibold", it))
+// 加粗：自动回退到 sans 数组，即英文 NewCM Bold + 中文黑体
+#let textbf(it) = text(font: fonts.sans, weight: "bold", it)
 
-#let textit(it) = block(text(style: "italic", it))
+// 斜体：自动回退到 italic 数组，即英文 NewCM Italic + 中文楷体
+#let textit(it) = text(font: fonts.italic, style: "italic", it)
