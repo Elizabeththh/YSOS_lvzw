@@ -1,5 +1,5 @@
 [workspace]
-members  = ["crates/boot", "crates/func2", "crates/func1", "crates/func3", "crates/func4", "crates/func5"]
+members  = ["crates/boot", "crates/func2", "crates/func1", "crates/func3", "crates/func4", "crates/func5", "crates/bonus-color", "crates/bonus-shell"]
 resolver = "3"
 
 [profile.release-with-debug]

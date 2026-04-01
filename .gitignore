@@ -14,3 +14,7 @@
 **/esp*
 **/target
 **/Cargo.lock
+
+### Latex ###
+*.synctex.gz
+*.pdf
